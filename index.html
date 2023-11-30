@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>F-B | one</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"> WebStudio</a>
+        </div>
+        <ul class="links">
+          <li><a href="hero">Studio</a></li>
+          <li><a href="Portfolio">Portfolio</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="contacts">Conntact</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu open">
+        <li><a href="hero">Studio</a></li>
+          <li><a href="Portfolio">Portfolio</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="contacts">Conntact</a></li>
+          <li><a href="#" class="action_btn">Get Started</a> </li>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Welcom</h1>
+        <p>
+          
+        </p>
+
+      </section>
+    </main>
+
+    <script>
+        const toggLeBtn = document.querySelector('.toggle_btn')
+        const toggLeBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document. querySelector('.dropdown_menu')
+
+        toggLeBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggLeBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+  </body>
+</html>
